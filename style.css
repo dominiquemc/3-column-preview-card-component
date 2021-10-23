@@ -21,6 +21,11 @@ body {
 
 }
 
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
 .item1 {
     background-color: hsl(31, 77%, 52%);
 }
@@ -34,7 +39,11 @@ body {
 }
 
 p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75)
+  
+  
 }
 
 button {
