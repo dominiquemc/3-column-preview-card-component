@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 
-body {
-    height: 100vh;
-}
-
 .container {
     display: flex;
     height: 600px;
@@ -22,7 +18,7 @@ svg {
     width: 220px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 50px;
     justify-content: center;
     line-height: 1.6;
 
@@ -65,6 +61,12 @@ p {
  margin: 30px;
 }
 
+.button1,
+.button2,
+.button3 {
+    position: relative;
+    right: 40px;
+}
 .button1 {
     color: hsl(31, 77%, 52%);
 }
@@ -95,9 +97,86 @@ p {
 .button3:hover {
     border: 3px solid #FFFFFF;
     color: #FFFFFF;
+    transition: 0.2s; 
 }
 
+span {
+    color: hsl(247, 84%, 20%);
+}
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 10px; text-align: center;
     color: hsl(228, 45%, 44%);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 636px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+      position: relative;
+      right: 40px;
+      padding: 18px 5px;
+      
+    }
+    
+    .item1 {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    .item2 {
+        border-radius: 0;
+    }
+
+    .item3 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+
+    .attribution {
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 492px) and (max-width: 845px) {
+    .container {
+        display: flex; 
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .items {
+        width: auto;
+       
+    }
+
+    .item1 {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+
+    .item3 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+
+    .button {
+        width: 50%;
+       margin: auto;
+       
+       
+    }
+    .attribution {
+        padding-top: 15px;
+    }
+}
+
