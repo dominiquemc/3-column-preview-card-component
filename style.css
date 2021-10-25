@@ -3,10 +3,10 @@
 
 .container {
     display: flex;
-    height: 600px;
+    height: 700px;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 svg {
